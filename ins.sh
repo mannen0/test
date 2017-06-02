@@ -11,5 +11,6 @@ git clone git://github.com/sstephenson/ruby-build.git
 rbenv install 2.4.1
 echo 'PATH=$HOME/.rbenv/versions/2.4.1/bin/:$PATH' >> ~/.bashrc
 cp ~/.bashrc ~/.bashrc.default
+source ~/.bashrc
 gem install rails
 bundle install
