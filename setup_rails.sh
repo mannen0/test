@@ -7,9 +7,11 @@ cp ~/.bashrc ~/.bashrc.default
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
 echo 'PATH=$HOME/.rbenv/versions/2.4.1/bin/:$PATH' >> ~/.bashrc
 echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+export PATH="$HOME/.rbenv/bin:$PATH"
+PATH=$HOME/.rbenv/versions/2.4.1/bin/:$PATH
+eval "$(rbenv init -)"
 mkdir -p ~/.rbenv/plugins
 cd ~/.rbenv/plugins/
 git clone git://github.com/sstephenson/ruby-build.git
-source ~/.bashrc
 rbenv install 2.4.1
 gem install rails
